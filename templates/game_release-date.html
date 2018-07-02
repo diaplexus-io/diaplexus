@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Platforms</th>
+            <th>Release Date</th>
+        </tr>
+        {% for record in release_dates %}
+        <tr>
+            <td>{{ record['Name'] }}</td>
+            <td>{{ record['Platforms'] }}</td>
+            <td>{{ record['Release Date'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
